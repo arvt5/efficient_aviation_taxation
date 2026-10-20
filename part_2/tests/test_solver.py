@@ -1,14 +1,18 @@
 import unittest
+from importlib.util import find_spec
 import numpy as np
-import torch
 
-from aviation_taxation.equilibrium import loss_fn
-from aviation_taxation.model import FractionalParams, demand_M3, brute_force_demand
-from aviation_taxation.network import FractionalDEQN, demand_torch, sample_interior
-from aviation_taxation.tables import build_tables
-from aviation_taxation.evaluation import policy_eval_full
+HAS_TORCH = find_spec('torch') is not None
+if HAS_TORCH:
+    import torch
+    from aviation_taxation.equilibrium import loss_fn
+    from aviation_taxation.model import FractionalParams, demand_M3, brute_force_demand
+    from aviation_taxation.network import FractionalDEQN, demand_torch, sample_interior
+    from aviation_taxation.tables import build_tables
+    from aviation_taxation.evaluation import policy_eval_full
 
 
+@unittest.skipUnless(HAS_TORCH, 'Install part_2[solver] for numerical solver tests')
 class SolverTests(unittest.TestCase):
     def test_demand_matches_independent_quadrature(self):
         params = FractionalParams(T=3, d=3/2.6, N=2, kappa=0.28)

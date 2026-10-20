@@ -1,0 +1,107 @@
+{
+  "source_project": "DynamicPricingWelfare",
+  "files": [
+    {
+      "source": "src/oligopol/custom_duo/solve_bellman_duopol.m",
+      "sha256": "d4519d814f6a5fcb458c8bc1883f045e27a20260dcae1d3e860848aa17a58e8e",
+      "target": "part_1/duopoly/matlab/solve_bellman_duopol.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/oligopol/custom_duo/solve_bellman_planner_duopol.m",
+      "sha256": "4137e32d01aa426ff308834ea6dab74494443dd24099b7cf85bad7c9768fc801",
+      "target": "part_1/duopoly/matlab/solve_bellman_planner_duopol.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/oligopol/custom_duo/solve_exponential_model.m",
+      "sha256": "617177b0b2a396cf17934cdd1f9bc7501d4ad508ee0042222a32b58581e04a59",
+      "target": "part_1/duopoly/matlab/solve_exponential_model.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "results/export/duo_custom_ticket_tax_comparison.csv",
+      "sha256": "8966700d2941597f7d82acd88ca8fe77ed6bd575c88e7cf0bf78bf74e8243761",
+      "target": "part_1/duopoly/data/exponential.csv",
+      "operation": "select complete-information VR=0.20, DR=0.30; retain all columns"
+    },
+    {
+      "source": "src/oligopol/logit/solve_bellman_logit.m",
+      "sha256": "f5a1e75d3bb2bd63521b3481b7c973681de35eb7824e63e084712c19f6ef7234",
+      "target": "part_1/duopoly/matlab/solve_bellman_logit.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/oligopol/logit/solve_bellman_planner_logit.m",
+      "sha256": "29a880b36f529f38b7dea264d958171c647fb8b6af64ee725c3146f14f3181f6",
+      "target": "part_1/duopoly/matlab/solve_bellman_planner_logit.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/oligopol/logit/solve_period_logit.m",
+      "sha256": "d23121712b431b75a5e904267f986e5ec1f780465fd9d4b09a714c7490e5ea1a",
+      "target": "part_1/duopoly/matlab/solve_period_logit.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "results/export/logit_ticket_tax_comparison.csv",
+      "sha256": "e3293dced627c51d2bcc9f7ba3c5ccd0f8fa60dca674942231433a0c653ddea2",
+      "target": "part_1/duopoly/data/logit.csv",
+      "operation": "select complete-information VR=0.20, DR=0.30; retain all columns"
+    },
+    {
+      "source": "src/monopol/return_policy/util/solve_bellman_return.m",
+      "sha256": "8e6a457ed9751abf214926d5d378c8c1c9a9d520f7a88595b5519f13681d45bf",
+      "target": "part_1/time_varying_demand/matlab/solve_bellman_return.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/monopol/return_policy/util/solve_bellman_planner_return.m",
+      "sha256": "6b99eb1bcd19844094a09c73a1466b0ffe071f8beaaa1ab17c7fa9abbdfeff91",
+      "target": "part_1/time_varying_demand/matlab/solve_bellman_planner_return.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/monopol/shared_util/compute_ar.m",
+      "sha256": "457779ff8c88a95c80d09f00a0a2f1be6f185bf8a3b04141c23a866d6c66bf96",
+      "target": "part_1/time_varying_demand/matlab/compute_ar.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/monopol/tax_only/util/solve_bellman_monopol.m",
+      "sha256": "20ed94784b6cfebd2953c18121fc6abe1f6bbc68a45bff04b34afb165eea28b3",
+      "target": "part_1/stationary_monopoly/matlab/solve_bellman_monopol.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/monopol/tax_only/util/solve_bellman_planner.m",
+      "sha256": "aef1793f9031ea2c87254acd7448bc96c8be3fad057af4365d2cd7b669a998bc",
+      "target": "part_1/stationary_monopoly/matlab/solve_bellman_planner.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/monopol/tax_only/util/solve_period_monopol.m",
+      "sha256": "deac8889f2e4fc01cfb4b203ad927e5c1ff1aa5bfc27e07a4e37bfa489855bc7",
+      "target": "part_1/stationary_monopoly/matlab/solve_period_monopol.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "src/monopol/tax_only/util/calib_2moments.m",
+      "sha256": "10e7f4d5a744dcda41d6b8d18ded0a1e2ecac798915a84b54f9995c2ee5ee455",
+      "target": "part_1/stationary_monopoly/matlab/calib_2moments.m",
+      "operation": "copy; trailing whitespace removed, numerical code unchanged"
+    },
+    {
+      "source": "results/calibration_results/return_results.mat",
+      "sha256": "38d16c0abf84f53f8cd90af36b584d64875f89ccf13c50cf2f5cc308a900f529",
+      "target": "part_1/time_varying_demand/data/exponential.mat",
+      "operation": "retain only calibration, three policies, planner and no-return baseline"
+    },
+    {
+      "source": "results/calibration_results/return_results_ces.mat",
+      "sha256": "a1edcc585fcd055a9aab353a3206e12ff40bcd78c1da97aea148e1ed65a4d026",
+      "target": "part_1/time_varying_demand/data/ces.mat",
+      "operation": "retain only calibration, three policies, planner and no-return baseline"
+    }
+  ]
+}
