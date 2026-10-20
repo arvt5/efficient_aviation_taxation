@@ -1,8 +1,8 @@
 [
   {
     "path": "config/paper.json",
-    "bytes": 1378,
-    "sha256": "143a96b3724d0a4f318c6d090322a084271d6b9a0e7408cd4cc674540f4bdbe5"
+    "bytes": 1379,
+    "sha256": "5dd94f732e56f885afb83e9c9c7ce29228e9f82d10b26ee4be0e4b164cb84db3"
   },
   {
     "path": "config/passenger_training.json",
@@ -26,8 +26,8 @@
   },
   {
     "path": "data/archived/diagnostic_passenger_neutral.json",
-    "bytes": 6059,
-    "sha256": "2cad43319db5b38bb8e6180db4ac23bdc55b4c596fd455aaa39342a23f7f9874"
+    "bytes": 6063,
+    "sha256": "4d560eccc5e95db1957a2bfadca066c0b085810fef605ff71078d94e47240a8c"
   },
   {
     "path": "data/archived/diagnostic_status_quo.json",
@@ -56,18 +56,23 @@
   },
   {
     "path": "data/archived/passenger_fiscal.json",
-    "bytes": 225,
-    "sha256": "892a338e1193fc914c1e668c48bf5dc5ac5e94066e681b1780f3af1113fe661c"
+    "bytes": 224,
+    "sha256": "1059fe3900513da034c60e238b46a3666712d5cb8fa9c5d0ba2a7c8976a9bea8"
   },
   {
     "path": "data/archived/passenger_neutral.json",
-    "bytes": 1673,
-    "sha256": "b021feba303152ace0c0db5e55120712f6272550c1baf2b257dadd73e1a2eed1"
+    "bytes": 1588,
+    "sha256": "0ea53eea0eb7e13d4c940da14743e1eeddbb3d8fef52316812235b0d11a4f03b"
+  },
+  {
+    "path": "data/archived/passenger_neutral_raw.json",
+    "bytes": 1411,
+    "sha256": "6a10ee4f3961332c1ebcb6723711e93f798a06a69dcb416af05f962ab4db730a"
   },
   {
     "path": "data/archived/passenger_selection.json",
-    "bytes": 4425,
-    "sha256": "db3bdda3e826654af86f547d0a70f56e1dfba46fc46866bf6c44c0c288c8adda"
+    "bytes": 364,
+    "sha256": "dcdd020e647207bd58435fc1422644a01433a668936303e2dc0cd7c10af24113"
   },
   {
     "path": "data/archived/price_path_metadata.json",

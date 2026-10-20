@@ -2,7 +2,7 @@
 
 Reproduction of the paper's free-entry aviation model with full-information
 dynamic pricing and endogenous flight frequency. The reference paper revision is
-`8b74b56e040001907dc5b179d783644ea925ffa1` from
+`06505f302b69eb47558e9c27a021c214b0ee61bc` from
 [the paper repository](https://github.com/LennartStern/Efficient-aviation-tax-policy-with-endogenous-vacancy-rates).
 
 This is a working migration checkpoint, not yet a complete publication release.
@@ -83,7 +83,9 @@ Install the solver dependency and use an allocated compute node:
 Then run `aviation_taxation.diagnostics` on each retained checkpoint and select
 the policy with the smallest directly checked maximum gain using
 `aviation_taxation.checkpoint_selection`. The historical passenger run selected
-the first refined checkpoint rather than the last. Exact commands and complete
+the first refined checkpoint rather than the last. The paper now uses the
+initial certified neural policy consistently for this endpoint; see the audit.
+Exact commands and complete
 archival inputs for the remaining calibration and sweep experiments are still
 being assembled; the above is a single-equilibrium recomputation path.
 

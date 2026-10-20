@@ -1,6 +1,6 @@
 {
   "paper_repository": "LennartStern/Efficient-aviation-tax-policy-with-endogenous-vacancy-rates",
-  "paper_commit": "8b74b56e040001907dc5b179d783644ea925ffa1",
+  "paper_commit": "06505f302b69eb47558e9c27a021c214b0ee61bc",
   "paper_source": "main.tex",
   "scope": "Free-entry model, full information, kappa=0.28",
   "selling_horizon_model": 3.0,
@@ -22,12 +22,12 @@
     "status_quo": [3.00, 79.9, 4.78, 934.1, 0.0, 0.0, 0.0, 0.0],
     "vacancy_optimum": [3.00, 95.3, 5.70, 680.6, 87.7, 0.0, 0.0, -17.5],
     "free_entry": [2.61, 96.3, 5.01, 849.0, 67.1, 0.0, 0.0, -32.6],
-    "passenger_neutral": [2.47, 97.3, 4.79, 805.0, 55.1, 126.8, 93.9, 50.7]
+    "passenger_neutral": [2.47, 96.5, 4.75, 803.2, 53.6, 139.6, 103.4, 67.5]
   },
   "published_diagnostics": {
     "status_quo": [0.004960080, 0.0008760456],
     "vacancy_optimum": [0.006493554, 0.001911305],
     "free_entry": [0.02165840, 0.003926880],
-    "passenger_neutral": [0.01079241, 0.001648979]
+    "passenger_neutral": [0.01211764, 0.001826470]
   }
 }

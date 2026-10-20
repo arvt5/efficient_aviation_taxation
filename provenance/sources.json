@@ -342,24 +342,6 @@
     "extraction": "byte-identical copy"
   },
   {
-    "output": "data/archived/passenger_neutral.json",
-    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/06_final_accounting/accounting.json",
-    "source_sha256": "b021feba303152ace0c0db5e55120712f6272550c1baf2b257dadd73e1a2eed1",
-    "extraction": "byte-identical copy"
-  },
-  {
-    "output": "data/archived/passenger_fiscal.json",
-    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/06_final_accounting/fiscal_accounting.json",
-    "source_sha256": "892a338e1193fc914c1e668c48bf5dc5ac5e94066e681b1780f3af1113fe661c",
-    "extraction": "byte-identical copy"
-  },
-  {
-    "output": "data/archived/passenger_selection.json",
-    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/05_selected_checkpoint/selection.json",
-    "source_sha256": "db3bdda3e826654af86f547d0a70f56e1dfba46fc46866bf6c44c0c288c8adda",
-    "extraction": "byte-identical copy"
-  },
-  {
     "output": "data/archived/diagnostic_status_quo.json",
     "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/04_posttrain_one_shot/status_quo/focal_forward/summary.json",
     "source_sha256": "fe32b1ec3b3726fa139fa0c2712fb06443321f5bc20af4bbfa748211798c9c6c",
@@ -378,15 +360,26 @@
     "extraction": "byte-identical copy"
   },
   {
-    "output": "data/archived/diagnostic_passenger_neutral.json",
-    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/05_selected_checkpoint/best_summary.json",
-    "source_sha256": "2cad43319db5b38bb8e6180db4ac23bdc55b4c596fd455aaa39342a23f7f9874",
-    "extraction": "byte-identical copy"
-  },
-  {
     "output": "data/archived/frequency_sweep.csv",
     "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/11_refined_interpolation/refined_sweep.csv",
     "source_sha256": "13c360106d48719b4954101be6fdb52ac808f4f6f77d621a202c1be533a7af9f",
     "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/passenger_neutral_raw.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/01_full_training/candidates/tau_0p400000/M_2p468698/tax_accounting.json",
+    "source_sha256": "6a10ee4f3961332c1ebcb6723711e93f798a06a69dcb416af05f962ab4db730a",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/diagnostic_passenger_neutral.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_00/summary.json",
+    "source_sha256": "4d560eccc5e95db1957a2bfadca066c0b085810fef605ff71078d94e47240a8c",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/passenger_neutral.json",
+    "source": "data/archived/passenger_neutral_raw.json and status_quo.json",
+    "extraction": "Restore calibrated fixed cost in accounting; derive implementing carbon charge. Allocation and frequency unchanged."
   }
 ]

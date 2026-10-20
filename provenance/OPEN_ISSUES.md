@@ -11,20 +11,21 @@
    evaluated policy. The package preserves the distinct sources and does not
    imply otherwise. Selecting a common policy would require a paper update.
 
-2. **The passenger price figure uses the pre-refinement policy.**
-   The paper's passenger endpoint accounting uses the selected refined policy,
-   while the price PDF uses the initial certified network policy. Comparing the
+2. **The passenger endpoint now consistently uses the pre-refinement policy.**
+   The authors selected the initial certified neural policy for the endpoint
+   accounting and diagnostic, matching the existing price PDF. Comparing the
    PDF vector path with that policy's weighted prices gives 247 of 247 matching
-   vertices within 0.015 PDF points. The selected refined policy matches only
+   vertices within 0.015 PDF points. The formerly selected refined policy matches only
    one vertex at that tolerance. The archived figure uses USD 400 per model-price
    unit and y limits USD 50--250. The reproduction retains that figure's policy
    and scale explicitly in `price_path_metadata.json`.
 
 3. **Passenger neutrality is approximate in the direct solve.**
-   Interpolation selected M=2.4686982215230104. Re-solving there with the selected
-   policy produces about 4.79 billion passengers against the 4.78 billion
-   baseline. The package preserves the computed values. It does not substitute
-   the passenger-neutral target for the actual direct-run outcome.
+   Interpolation selected M=2.4686982215230104. Under the selected initial policy,
+   passenger volume is 4.747872281 billion, 0.67% below the 4.78 billion baseline.
+   The package preserves the computed value rather than substituting the target.
+   The frequency and interpolation are unchanged. No additional equilibrium
+   calculations were run to adopt this checkpoint.
 
 4. **Frequency figure and endpoint table use distinct numerical constructions.**
    The figure fits quadratics to the selected sweep's 15 observations with

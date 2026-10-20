@@ -19,7 +19,7 @@ class ReproductionTests(unittest.TestCase):
         baseline = read_json(ROOT / 'data/archived/status_quo.json')
         record = read_json(ROOT / 'data/archived/passenger_neutral.json')
         metrics = endpoint_metrics(record, baseline, config, carbon=True)
-        self.assertAlmostEqual(metrics['fiscal_dividend_busd'], 50.656123462321034)
+        self.assertAlmostEqual(metrics['fiscal_dividend_busd'], 67.4985988252662)
         emissions_bn_tonnes = config['status_quo_emissions_mt'] / 1000 * record['M'] / baseline['M']
         self.assertAlmostEqual(metrics['carbon_revenue_busd'] / emissions_bn_tonnes,
                                metrics['carbon_tax_usd_per_tonne'])

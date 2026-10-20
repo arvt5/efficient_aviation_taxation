@@ -27,9 +27,10 @@ Completed on 2026-10-20:
    elasticity and the empirical schedule-delay appendix.
 2. Build the selected-policy archive, omitting rejected iterations and unused
    calibration variants. Publish a retrieval manifest with public archive URLs.
-3. Recalculate stationary accounting from the selected archived policies and
-   decide, with the authors, how the paper's policy-version discrepancies should
-   be resolved. Preserve the current-paper reproduction as a versioned target.
+3. Verify accounting against selected archived policies. The authors have
+   resolved the passenger policy mismatch by adopting the initial certified
+   neural checkpoint for all passenger-endpoint outputs. The free-entry
+   accounting/diagnostic policy mismatch still needs a separate decision.
 4. Extract calibration and sweep orchestration and exact experiment settings;
    add resource-aware optional batch jobs and checkpoint recovery instructions.
 5. Verify from a fresh environment and produce the release audit, licenses,
@@ -37,3 +38,12 @@ Completed on 2026-10-20:
 
 Full equilibrium retraining requires a separately scheduled compute allocation.
 No cluster training jobs were submitted during checkpoint 1.
+
+## Checkpoint 2: consistent passenger policy
+
+On author instruction, adopted the initial passenger-endpoint policy (outer_00)
+for accounting and the deviation diagnostic, matching the existing price figure.
+Retained M=2.4686982215230104 and every interpolation input and coefficient.
+No new equilibrium calculations were performed. The actual passenger shortfall
+is 0.67%; it is reported explicitly. Fixed cost is restored to the calibrated
+baseline value for accounting because the original training record used K=0.

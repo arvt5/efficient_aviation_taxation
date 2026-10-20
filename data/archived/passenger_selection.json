@@ -1,64 +1,9 @@
 {
-  "best": {
-    "tag": "outer_01",
-    "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_01_policy.npz",
-    "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_01/summary.json",
-    "direct_max_relative": 0.001648979247357147
-  },
-  "candidates": [
-    {
-      "tag": "outer_00",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_00_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_00/summary.json",
-      "direct_max_relative": 0.0018264704286845084
-    },
-    {
-      "tag": "outer_01",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_01_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_01/summary.json",
-      "direct_max_relative": 0.001648979247357147
-    },
-    {
-      "tag": "outer_02",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_02_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_02/summary.json",
-      "direct_max_relative": 0.001875098545223538
-    },
-    {
-      "tag": "outer_03",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_03_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_03/summary.json",
-      "direct_max_relative": 0.0029101271558027507
-    },
-    {
-      "tag": "outer_04",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_04_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_04/summary.json",
-      "direct_max_relative": 0.002936859147181225
-    },
-    {
-      "tag": "outer_05",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_05_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_05/summary.json",
-      "direct_max_relative": 0.0035907682983642966
-    },
-    {
-      "tag": "outer_06",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_06_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_06/summary.json",
-      "direct_max_relative": 0.0036252955460781763
-    },
-    {
-      "tag": "outer_07",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_07_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_07/summary.json",
-      "direct_max_relative": 0.0036198644661469674
-    },
-    {
-      "tag": "outer_08",
-      "policy": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/03_tabular_refinement/accepted_checkpoints/outer_08_policy.npz",
-      "summary": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/04_direct_checkpoint_checks/outer_08/summary.json",
-      "direct_max_relative": 0.003618516764710679
-    }
-  ]
+  "selected_checkpoint": "outer_00",
+  "selected_source": "pre_refinement",
+  "selection_reason": "Author decision: consistent initial neural policy for price figure, endpoint accounting, and diagnostic.",
+  "frequency_changed": false,
+  "interpolation_changed": false,
+  "new_equilibrium_runs": false,
+  "relative_direct_one_shot_gain": 0.0018264704286845084
 }
