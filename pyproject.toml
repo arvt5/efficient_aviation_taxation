@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "efficient-aviation-taxation"
+version = "0.1.0"
+description = "Reproduction of the free-entry aviation taxation results"
+requires-python = ">=3.10"
+dependencies = ["numpy>=2.0,<3", "matplotlib>=3.9,<4"]
+
+[project.optional-dependencies]
+solver = ["torch>=2.8,<3"]
+
+[project.scripts]
+aviation-reproduce = "aviation_taxation.reproduce:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

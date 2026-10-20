@@ -1,0 +1,21 @@
+{
+  "experiment": "passenger-neutral equilibrium",
+  "params": {
+    "T": 3.0, "d": 1.2152153608103684, "N": 20, "a": 1.0,
+    "lambda_bar": 28.26596944380268, "c": 0.09813169674655987,
+    "tau": 0.4, "ticket_tax": 0.0, "kappa": 0.28
+  },
+  "seed": 3468,
+  "seed_note": "Original runner base seed 2468 plus first-candidate offset 1000",
+  "hidden": 1024,
+  "iterations": 8000,
+  "batch_size": 16384,
+  "dt": 0.01,
+  "learning_rate": 0.0003,
+  "cross_ramp_fraction": 0.3,
+  "refinement_rounds": 3,
+  "refinement_iterations": 2500,
+  "value_weight": 0.5,
+  "n_phi": 101,
+  "burn_in": 20
+}

@@ -1,0 +1,33 @@
+{
+  "paper_repository": "LennartStern/Efficient-aviation-tax-policy-with-endogenous-vacancy-rates",
+  "paper_commit": "8b74b56e040001907dc5b179d783644ea925ffa1",
+  "paper_source": "main.tex",
+  "scope": "Free-entry model, full information, kappa=0.28",
+  "selling_horizon_model": 3.0,
+  "status_quo_gross_revenue_busd": 1000.0,
+  "status_quo_passengers_bn": 4.78,
+  "status_quo_emissions_mt": 900.0,
+  "reference_ticket_price_usd": 194.0,
+  "fiscal_wedge": 0.28,
+  "social_costs_of_carbon_usd": [210.0, 336.0],
+  "frequency_fit_degrees": [1, 2, 3, 4],
+  "welfare_figure_minimum_fitted_M": 2.3,
+  "welfare_figure_degree": 2,
+  "published_endpoint_columns": [
+    "M", "load_factor_percent", "passengers_bn", "net_revenue_busd",
+    "welfare_gain_busd", "carbon_tax_usd_per_tonne", "carbon_revenue_busd",
+    "fiscal_dividend_busd"
+  ],
+  "published_endpoints": {
+    "status_quo": [3.00, 79.9, 4.78, 934.1, 0.0, 0.0, 0.0, 0.0],
+    "vacancy_optimum": [3.00, 95.3, 5.70, 680.6, 87.7, 0.0, 0.0, -17.5],
+    "free_entry": [2.61, 96.3, 5.01, 849.0, 67.1, 0.0, 0.0, -32.6],
+    "passenger_neutral": [2.47, 97.3, 4.79, 805.0, 55.1, 126.8, 93.9, 50.7]
+  },
+  "published_diagnostics": {
+    "status_quo": [0.004960080, 0.0008760456],
+    "vacancy_optimum": [0.006493554, 0.001911305],
+    "free_entry": [0.02165840, 0.003926880],
+    "passenger_neutral": [0.01079241, 0.001648979]
+  }
+}

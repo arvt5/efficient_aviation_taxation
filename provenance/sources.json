@@ -1,0 +1,392 @@
+[
+  {
+    "output": "src/aviation_taxation/model.py",
+    "source": "src/stage5/model.py",
+    "source_sha256": "ed38f2e3dde85618995b32102a04e2ec4752f54eda3f7a1e4bf6e43d0117adcd",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "NSLOTS",
+      "_branch_integral",
+      "active_mask",
+      "brute_force_demand",
+      "dataclass",
+      "demand_M3",
+      "departure_offsets",
+      "np",
+      "validate"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/network.py",
+    "source": "src/stage5/deqn.py",
+    "source_sha256": "b614529b7c1749f481b2b2b993fa07cc9c0f0d8b99679181ce21a0dcd270bada",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalDEQN",
+      "FractionalParams",
+      "NSLOTS",
+      "_apply_entry_if_crossed",
+      "_branch_integral_torch",
+      "_device",
+      "_post_boundary_state",
+      "_sample_phi_band",
+      "_winning_intervals_torch",
+      "active2_torch",
+      "active_rank_mask",
+      "boundary_residuals",
+      "demand_torch",
+      "fischer_burmeister",
+      "nn",
+      "np",
+      "rank_values",
+      "sample_interior",
+      "sample_states",
+      "successor_value",
+      "torch",
+      "validate"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/forward.py",
+    "source": "src/stage5/forward.py",
+    "source_sha256": "ed3d5ea66009bcec366d12bec8a5b4ed8da54d84fe326064dbd2960249e741ef",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "_entry_index",
+      "_inject_entry",
+      "_sale_probs",
+      "demand_torch",
+      "forward_moments",
+      "np",
+      "phase_shift",
+      "price_demand_tables",
+      "propagate_one_phase",
+      "rank_values",
+      "stationary_forward",
+      "torch",
+      "welfare_moments"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/tables.py",
+    "source": "src/stage5/certify.py",
+    "source_sha256": "db6f59243d80d049cb88831c57e28312cc6679bdbe160774e9c92afec3193dc1",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalDEQN",
+      "FractionalParams",
+      "Path",
+      "build_tables",
+      "csv",
+      "demand_torch",
+      "load_model",
+      "np",
+      "rank_values",
+      "regime_name",
+      "summarize",
+      "torch",
+      "weighted_summarize",
+      "write_csv",
+      "write_policy_eval_artifacts"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/policy_tables.py",
+    "source": "src/stage5/grid_policy_iteration.py",
+    "source_sha256": "478dafcea91d69873b8e27c7c8e31858626ac8909eebec0804a9f1ee07e970ab",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "Path",
+      "_continuation_and_red",
+      "append_csv",
+      "csv",
+      "demand_tables_from_policy",
+      "demand_torch",
+      "json",
+      "np",
+      "phase_shift",
+      "propagate_one_phase",
+      "state_grid",
+      "stationary_forward_tables",
+      "torch",
+      "write_json"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/sampling.py",
+    "source": "src/stage5/refine_experimental.py",
+    "source_sha256": "5cc5f552639df5939b2ec2493f17ecd5513cb443c87c0d633be72a5c3f601895",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "_build_alignment_sampling",
+      "_phase_region_weights",
+      "_sample_alignment_batch",
+      "_state_grid",
+      "np",
+      "torch"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/equilibrium.py",
+    "source": "src/stage6/deqn_full.py",
+    "source_sha256": "3f1f1c150a34326b1400039af23e250621c64d85d85a43bce53924577e3f5216",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "NSLOTS",
+      "_cross_weight_at",
+      "_device",
+      "_reduced_slot_values",
+      "active_rank_mask",
+      "boundary_residuals",
+      "demand_torch",
+      "fischer_burmeister",
+      "loss_fn",
+      "np",
+      "rank_values",
+      "residual_stats",
+      "residuals",
+      "sample_interior",
+      "successor_value",
+      "torch",
+      "train"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/evaluation.py",
+    "source": "src/stage6/certify_full.py",
+    "source_sha256": "6e27ebed83644970936011c3b39d4c49863abbd8617e9aa20e5b43988cf9bbd5",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "Path",
+      "_shift_down",
+      "argparse",
+      "asdict",
+      "build_tables",
+      "certify",
+      "demand_torch",
+      "foc_at_eval_full",
+      "forward_moments",
+      "json",
+      "load_model",
+      "main",
+      "np",
+      "one_shot_full",
+      "policy_eval_full",
+      "regime_name",
+      "residual_stats",
+      "stationary_forward",
+      "summarize",
+      "torch",
+      "weighted_summarize",
+      "write_csv",
+      "write_policy_eval_artifacts"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/value_refinement.py",
+    "source": "src/stage6/refine_full.py",
+    "source_sha256": "89a40bb363f71946f48046cf5932f15828c34a16cc6db5e680b8603740768e6b",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "RESID_WEIGHTS",
+      "_build_alignment_sampling",
+      "_refine_namespace",
+      "_sample_alignment_batch",
+      "active2_torch",
+      "alignment_loss",
+      "build_tables",
+      "make_targets",
+      "np",
+      "policy_eval_full",
+      "refine",
+      "residual_loss_fn",
+      "sample_interior",
+      "stationary_forward",
+      "torch"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/best_response.py",
+    "source": "src/stage6/grid_policy_iteration_full.py",
+    "source_sha256": "69d8532d48d3523327e9a018356a5c5ec037b8f71f1defacaf0c318249836b9b",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "_continuation_and_red",
+      "_shift_down",
+      "continuous_best_response_full",
+      "demand_torch",
+      "np",
+      "state_grid",
+      "torch"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/diagnostics.py",
+    "source": "src/stage6/focal_one_shot_forward_gain.py",
+    "source_sha256": "af1b26d6e3f84b77d7821b70f8d4343e830a5b102168629a5833880b581daba9",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FOCAL_RANKS",
+      "FractionalParams",
+      "Path",
+      "_candidate_demand_tables",
+      "_entry_boundary_value",
+      "_expected_next",
+      "_focal_entry_index",
+      "_forward_accounting_gain_for_prices",
+      "_initial_focal_distribution",
+      "_inject_entry",
+      "_landing_value",
+      "_life_start_index",
+      "_next_continuation_arrays",
+      "_params_from_result",
+      "_phase_boundary_value",
+      "_sale_probs",
+      "_scalar_landing",
+      "_terminal_unsold_value",
+      "_transition_forward",
+      "_weighted_summary",
+      "_write_csv",
+      "argparse",
+      "asdict",
+      "brute_force_deviation_profit",
+      "csv",
+      "demand_torch",
+      "evaluate_focal_one_shot_gains",
+      "focal_accounting_continuations",
+      "focal_forward_baseline",
+      "json",
+      "main",
+      "np",
+      "optimize_forward_accounting_price",
+      "phase_shift",
+      "state_grid",
+      "torch",
+      "write_json"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/policy_refinement.py",
+    "source": "src/stage6/accepted_threshold_policy_iteration.py",
+    "source_sha256": "ece408e238292a4113e3cb0a10cee3d7e8c0f2fb8bf1a21967acc6e8ad545c05",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "FractionalParams",
+      "Path",
+      "_evaluate",
+      "_initial_focal_distribution",
+      "_load_params",
+      "_row",
+      "_save_policy",
+      "append_csv",
+      "argparse",
+      "asdict",
+      "continuous_best_response_full",
+      "demand_tables_from_policy",
+      "evaluate_focal_one_shot_gains",
+      "json",
+      "main",
+      "np",
+      "policy_eval_full",
+      "stationary_forward_tables",
+      "time",
+      "torch",
+      "write_json"
+    ]
+  },
+  {
+    "output": "src/aviation_taxation/checkpoint_selection.py",
+    "source": "src/stage6/select_direct_checkpoint.py",
+    "source_sha256": "6185c770970112750bdcddcfc93c46d91a676a2349757bef70a21d07ee2f416a",
+    "extraction": "AST dependency closure, internal import remapping, module terminology cleanup",
+    "retained_symbols": [
+      "Path",
+      "argparse",
+      "direct_metric",
+      "json",
+      "main",
+      "read_json",
+      "shutil"
+    ]
+  },
+  {
+    "output": "data/archived/calibration.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/01_calibration/calibration_result.json",
+    "source_sha256": "2025bb1ec913f1cfa42906d33d97ae4f616e6118bcb704854f016cac8928283b",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/status_quo.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/11_refined_interpolation/status_quo_accounting.json",
+    "source_sha256": "8340ba6f1751b489f29259928451e6ca3c2599414aa29539d91ea90a0a1fe12e",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/vacancy_optimum.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/02_ticket_tax_removal_tau_star/ticket_tax_replacement/fixed_m_tau_star.json",
+    "source_sha256": "1dadcf835ce1b5f69606ce59c51fcbd74b8d7307c1c58be68b3188acff20a96b",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/free_entry.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/02_ticket_tax_removal_tau_star/ticket_tax_replacement/free_entry_after_ticket_tax_removed/tau_0p400000/M_2p610000/tax_accounting.json",
+    "source_sha256": "321207bddcf11da4119cf3f714e6775bec96054e51bbb53459d318f75dc9b6ae",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/passenger_neutral.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/06_final_accounting/accounting.json",
+    "source_sha256": "b021feba303152ace0c0db5e55120712f6272550c1baf2b257dadd73e1a2eed1",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/passenger_fiscal.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/06_final_accounting/fiscal_accounting.json",
+    "source_sha256": "892a338e1193fc914c1e668c48bf5dc5ac5e94066e681b1780f3af1113fe661c",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/passenger_selection.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/05_selected_checkpoint/selection.json",
+    "source_sha256": "db3bdda3e826654af86f547d0a70f56e1dfba46fc46866bf6c44c0c288c8adda",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/diagnostic_status_quo.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/04_posttrain_one_shot/status_quo/focal_forward/summary.json",
+    "source_sha256": "fe32b1ec3b3726fa139fa0c2712fb06443321f5bc20af4bbfa748211798c9c6c",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/diagnostic_vacancy_optimum.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/04_posttrain_one_shot/tau_star/focal_forward/summary.json",
+    "source_sha256": "ca9637340675e06a85bad943cc0dcce5e2c727e68996ed5cb4dcd6307437afff",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/diagnostic_free_entry.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/11_refined_interpolation/standalone_free_entry/direct_summary.json",
+    "source_sha256": "ccb9423b4b5f9105721f7642704fe9aeeeba43bbe606799bbd342903d3224287",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/diagnostic_passenger_neutral.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/05_selected_checkpoint/best_summary.json",
+    "source_sha256": "2cad43319db5b38bb8e6180db4ac23bdc55b4c596fd455aaa39342a23f7f9874",
+    "extraction": "byte-identical copy"
+  },
+  {
+    "output": "data/archived/frequency_sweep.csv",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/11_refined_interpolation/refined_sweep.csv",
+    "source_sha256": "13c360106d48719b4954101be6fdb52ac808f4f6f77d621a202c1be533a7af9f",
+    "extraction": "byte-identical copy"
+  }
+]

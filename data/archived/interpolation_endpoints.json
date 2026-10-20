@@ -1,0 +1,64 @@
+{
+  "free_entry": {
+    "name": "free_entry",
+    "target": 0.0,
+    "defining_metric_degree": 2,
+    "observed_bracket_M": [
+      2.6,
+      2.65
+    ],
+    "M": 2.6094942389936397,
+    "tau_c_model_per_flight": 0.0,
+    "tau_c_usd_per_tco2": 0.0,
+    "vacancy_tax_revenue_busd": 30.60241103620294,
+    "carbon_tax_revenue_busd": 0.0,
+    "ticket_tax_revenue_lost_busd": 65.86512318301722,
+    "fiscal_dividend_busd": -35.26271214681428,
+    "root_M_by_degree": {
+      "1": 2.618516208647171,
+      "2": 2.6094942389936397,
+      "3": 2.6087457229420528,
+      "4": 2.607257939570019
+    },
+    "jackknife": {
+      "n": 20,
+      "M_std": 0.0010988026451598713,
+      "M_min": 2.6079930691488538,
+      "M_max": 2.611822563871633,
+      "tau_c_std": 0.0,
+      "tau_c_min": 0.0,
+      "tau_c_max": 0.0
+    }
+  },
+  "passenger_neutral": {
+    "name": "passenger_neutral",
+    "target": 15.98550992116111,
+    "defining_metric_degree": 1,
+    "observed_bracket_M": [
+      2.45,
+      2.5
+    ],
+    "M": 2.4686982215230104,
+    "tau_c_model_per_flight": 0.9069106621937557,
+    "tau_c_usd_per_tco2": 130.18421937893675,
+    "vacancy_tax_revenue_busd": 25.537102055278417,
+    "carbon_tax_revenue_busd": 96.41566525534279,
+    "ticket_tax_revenue_lost_busd": 65.86512318301722,
+    "fiscal_dividend_busd": 56.08764412760398,
+    "root_M_by_degree": {
+      "1": 2.4686982215230104,
+      "2": 2.472541015733129,
+      "3": 2.4724443216408,
+      "4": 2.4700114879881134
+    },
+    "jackknife": {
+      "n": 20,
+      "M_std": 0.0009751868539330393,
+      "M_min": 2.46694097706814,
+      "M_max": 2.4700131977562094,
+      "tau_c_std": 0.0037881060707093653,
+      "tau_c_min": 0.8993145869867867,
+      "tau_c_max": 0.9125460505551182
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "params": {
+    "T": 3.0,
+    "d": 1.0,
+    "N": 20,
+    "a": 1.0,
+    "lambda_bar": 28.26596944380268,
+    "c": 0.09813169674655987,
+    "tau": 0.0,
+    "ticket_tax": 0.03189280144263196,
+    "kappa": 0.28
+  },
+  "baseline_focal": {
+    "gross_revenue": 7.740404469571842,
+    "sales": 15.985509921175002,
+    "probability_weighted_price": 0.4842137978544315,
+    "unsold": 4.0144900788250055,
+    "ticket_tax_payment": 0.5098226938752576,
+    "vacancy_tax_payment": 0.0,
+    "firm_operating_profit_before_fixed": 5.661896563772714
+  },
+  "initial_distribution_mass": 1.0,
+  "grid_scaling": {
+    "nsteps": 100,
+    "dphi": 0.01,
+    "rule": "scaled_profit_gain = raw_profit_gain * nsteps",
+    "interpretation": "raw_profit_gain is the finite-cell unconditional full-horizon gain; scaled_profit_gain divides by dphi and is the primary grid-invariant one-shot metric"
+  },
+  "candidate_count": 2646000,
+  "positive_gain_count": 858967,
+  "max_profit_gain_raw": 3.0473778788510647e-05,
+  "max_profit_gain_scaled": 0.003047377878851065,
+  "max_profit_gain_raw_relative_to_baseline": 5.382256359732035e-06,
+  "max_profit_gain_scaled_relative_to_baseline": 0.0005382256359732035,
+  "profit_gain_raw_weighted_by_reach_probability": {
+    "mean": 7.382163762609214e-08,
+    "p50": 0.0,
+    "p90": 1.154301288987998e-08,
+    "p99": 1.9248351749358457e-06,
+    "p999": 9.825643482690413e-06,
+    "max": 3.0473778788510647e-05
+  },
+  "profit_gain_scaled_weighted_by_reach_probability": {
+    "mean": 7.382163762609214e-06,
+    "p50": 0.0,
+    "p90": 1.154301288987998e-06,
+    "p99": 0.00019248351749358457,
+    "p999": 0.0009825643482690412,
+    "max": 0.003047377878851065
+  },
+  "rank2": {
+    "max_profit_gain_raw": 1.296293085542663e-05,
+    "max_profit_gain_scaled": 0.001296293085542663,
+    "raw_weighted_by_reach_probability": {
+      "mean": 7.801664443771776e-08,
+      "p50": 0.0,
+      "p90": 4.141186507851687e-08,
+      "p99": 2.8337221670340652e-06,
+      "p999": 7.774463833235401e-06,
+      "max": 1.296293085542663e-05
+    },
+    "scaled_weighted_by_reach_probability": {
+      "mean": 7.801664443771772e-06,
+      "p50": 0.0,
+      "p90": 4.141186507851687e-06,
+      "p99": 0.0002833722167034065,
+      "p999": 0.0007774463833235401,
+      "max": 0.001296293085542663
+    }
+  },
+  "rank1": {
+    "max_profit_gain_raw": 8.971567703207854e-06,
+    "max_profit_gain_scaled": 0.0008971567703207854,
+    "raw_weighted_by_reach_probability": {
+      "mean": 6.208274183805178e-08,
+      "p50": 0.0,
+      "p90": 4.735675759450967e-09,
+      "p99": 2.1985937552073836e-06,
+      "p999": 7.561366916950617e-06,
+      "max": 8.971567703207854e-06
+    },
+    "scaled_weighted_by_reach_probability": {
+      "mean": 6.208274183805174e-06,
+      "p50": 0.0,
+      "p90": 4.735675759450967e-07,
+      "p99": 0.00021985937552073838,
+      "p999": 0.0007561366916950616,
+      "max": 0.0008971567703207854
+    }
+  },
+  "rank0": {
+    "max_profit_gain_raw": 3.0473778788510647e-05,
+    "max_profit_gain_scaled": 0.003047377878851065,
+    "raw_weighted_by_reach_probability": {
+      "mean": 8.136552660250683e-08,
+      "p50": 0.0,
+      "p90": 3.69509780203535e-11,
+      "p99": 7.776381372386002e-07,
+      "p999": 2.2416758396101036e-05,
+      "max": 3.0473778788510647e-05
+    },
+    "scaled_weighted_by_reach_probability": {
+      "mean": 8.136552660250681e-06,
+      "p50": 0.0,
+      "p90": 3.6950978020353498e-09,
+      "p99": 7.776381372386002e-05,
+      "p999": 0.0022416758396101035,
+      "max": 0.003047377878851065
+    }
+  },
+  "direct_forward_optimization_top": {
+    "candidate_count": 10000,
+    "price_min": 0.02,
+    "price_max": 6.0,
+    "coarse_points": 81,
+    "local_steps": 24,
+    "max_direct_profit_gain_raw": 4.9600797321864686e-05,
+    "max_direct_profit_gain_scaled": 0.004960079732186469,
+    "max_direct_gain_raw_relative_to_baseline": 8.760456282305163e-06,
+    "max_direct_gain_scaled_relative_to_baseline": 0.0008760456282305162,
+    "max_direct_gain_relative_to_baseline": 0.0008760456282305162,
+    "max_improvement_over_saved_br_raw": 4.361570596477074e-05,
+    "max_improvement_over_saved_br_scaled": 0.004361570596477074,
+    "max_abs_price_vs_saved_br": 0.07473778395164665
+  },
+  "brute_force_verification": [
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 7,
+      "n0": 2,
+      "n1": 16,
+      "n2": 20,
+      "fast_gain_raw": 3.0473778788510647e-05,
+      "fast_gain_scaled": 0.003047377878851065,
+      "brute_force_gain_raw": 3.04737787910625e-05,
+      "brute_force_gain_scaled": 0.00304737787910625,
+      "abs_error_raw": 2.5518527720612416e-15
+    },
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 6,
+      "n0": 2,
+      "n1": 16,
+      "n2": 20,
+      "fast_gain_raw": 3.021274188558793e-05,
+      "fast_gain_scaled": 0.003021274188558793,
+      "brute_force_gain_raw": 3.0212741888746564e-05,
+      "brute_force_gain_scaled": 0.0030212741888746564,
+      "abs_error_raw": 3.1586332941563322e-15
+    },
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 5,
+      "n0": 2,
+      "n1": 16,
+      "n2": 20,
+      "fast_gain_raw": 2.981549681810205e-05,
+      "fast_gain_scaled": 0.002981549681810205,
+      "brute_force_gain_raw": 2.9815496823459853e-05,
+      "brute_force_gain_scaled": 0.0029815496823459853,
+      "abs_error_raw": 5.357801875771617e-15
+    },
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 4,
+      "n0": 2,
+      "n1": 16,
+      "n2": 20,
+      "fast_gain_raw": 2.9279573832283955e-05,
+      "fast_gain_scaled": 0.0029279573832283953,
+      "brute_force_gain_raw": 2.9279573832141637e-05,
+      "brute_force_gain_scaled": 0.0029279573832141637,
+      "abs_error_raw": 1.4231847579766754e-16
+    },
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 8,
+      "n0": 2,
+      "n1": 15,
+      "n2": 20,
+      "fast_gain_raw": 2.8860340234949106e-05,
+      "fast_gain_scaled": 0.0028860340234949104,
+      "brute_force_gain_raw": 2.8860340237635285e-05,
+      "brute_force_gain_scaled": 0.0028860340237635285,
+      "abs_error_raw": 2.6861786449686176e-15
+    }
+  ]
+}

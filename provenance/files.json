@@ -1,0 +1,102 @@
+[
+  {
+    "path": "config/paper.json",
+    "bytes": 1378,
+    "sha256": "143a96b3724d0a4f318c6d090322a084271d6b9a0e7408cd4cc674540f4bdbe5"
+  },
+  {
+    "path": "config/passenger_training.json",
+    "bytes": 588,
+    "sha256": "92c29ffb4a6e40b6a66ceb23902646f71706095914309ceb5deab12e625d4c0d"
+  },
+  {
+    "path": "data/archived/calibration.json",
+    "bytes": 3836,
+    "sha256": "2025bb1ec913f1cfa42906d33d97ae4f616e6118bcb704854f016cac8928283b"
+  },
+  {
+    "path": "data/archived/carbon_instrument_fit.json",
+    "bytes": 1848,
+    "sha256": "3faf08a5db2c6b0d4f043bf071c5d61b0110003d04e1d5d405f87d87f48f3d8a"
+  },
+  {
+    "path": "data/archived/diagnostic_free_entry.json",
+    "bytes": 6038,
+    "sha256": "ccb9423b4b5f9105721f7642704fe9aeeeba43bbe606799bbd342903d3224287"
+  },
+  {
+    "path": "data/archived/diagnostic_passenger_neutral.json",
+    "bytes": 6059,
+    "sha256": "2cad43319db5b38bb8e6180db4ac23bdc55b4c596fd455aaa39342a23f7f9874"
+  },
+  {
+    "path": "data/archived/diagnostic_status_quo.json",
+    "bytes": 6146,
+    "sha256": "fe32b1ec3b3726fa139fa0c2712fb06443321f5bc20af4bbfa748211798c9c6c"
+  },
+  {
+    "path": "data/archived/diagnostic_vacancy_optimum.json",
+    "bytes": 6087,
+    "sha256": "ca9637340675e06a85bad943cc0dcce5e2c727e68996ed5cb4dcd6307437afff"
+  },
+  {
+    "path": "data/archived/free_entry.json",
+    "bytes": 1434,
+    "sha256": "321207bddcf11da4119cf3f714e6775bec96054e51bbb53459d318f75dc9b6ae"
+  },
+  {
+    "path": "data/archived/frequency_sweep.csv",
+    "bytes": 5994,
+    "sha256": "13c360106d48719b4954101be6fdb52ac808f4f6f77d621a202c1be533a7af9f"
+  },
+  {
+    "path": "data/archived/interpolation_endpoints.json",
+    "bytes": 1750,
+    "sha256": "68b5746865db97e6b6d3c596ec36fcbc9971791e0bddd6639dc579e120b1923d"
+  },
+  {
+    "path": "data/archived/passenger_fiscal.json",
+    "bytes": 225,
+    "sha256": "892a338e1193fc914c1e668c48bf5dc5ac5e94066e681b1780f3af1113fe661c"
+  },
+  {
+    "path": "data/archived/passenger_neutral.json",
+    "bytes": 1673,
+    "sha256": "b021feba303152ace0c0db5e55120712f6272550c1baf2b257dadd73e1a2eed1"
+  },
+  {
+    "path": "data/archived/passenger_selection.json",
+    "bytes": 4425,
+    "sha256": "db3bdda3e826654af86f547d0a70f56e1dfba46fc46866bf6c44c0c288c8adda"
+  },
+  {
+    "path": "data/archived/price_path_metadata.json",
+    "bytes": 949,
+    "sha256": "ead5ca451574eb34d6d954813e35a3f54a95fd0e4493ecfafd8fef475c1466fe"
+  },
+  {
+    "path": "data/archived/price_path_passenger_neutral.csv",
+    "bytes": 13365,
+    "sha256": "964db254c421ee01ebade799391d8b348930f951999d2d37d59d4abf7fb69322"
+  },
+  {
+    "path": "data/archived/price_path_status_quo.csv",
+    "bytes": 12429,
+    "sha256": "0e00f0c535fc3b7e764cebfe628be23806c49ffa737a45762aba4479d411f564"
+  },
+  {
+    "path": "data/archived/status_quo.json",
+    "bytes": 1580,
+    "sha256": "8340ba6f1751b489f29259928451e6ca3c2599414aa29539d91ea90a0a1fe12e"
+  },
+  {
+    "path": "data/archived/vacancy_optimum.json",
+    "bytes": 1546,
+    "sha256": "1dadcf835ce1b5f69606ce59c51fcbd74b8d7307c1c58be68b3188acff20a96b"
+  },
+  {
+    "path": "data/archived/welfare_baseline.json",
+    "bytes": 243,
+    "sha256": "f76e18c17267ac80b0e9000e91810b51f3a8bcaaabe9ab8088510913d37e247a"
+  }
+]

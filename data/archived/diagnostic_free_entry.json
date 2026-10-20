@@ -1,0 +1,193 @@
+{
+  "params": {
+    "T": 3.0,
+    "d": 1.149425287356322,
+    "N": 20,
+    "a": 1.0,
+    "lambda_bar": 28.26596944380268,
+    "c": 0.09813169674655987,
+    "tau": 0.4,
+    "ticket_tax": 0.0,
+    "kappa": 0.28
+  },
+  "baseline_focal": {
+    "gross_revenue": 7.6163220344278155,
+    "sales": 19.541969140436294,
+    "probability_weighted_price": 0.3897417900772396,
+    "unsold": 0.45803085956370887,
+    "ticket_tax_payment": 0.0,
+    "vacancy_tax_payment": 0.18321234382548357,
+    "firm_operating_profit_before_fixed": 5.515423101082406
+  },
+  "initial_distribution_mass": 1.0,
+  "grid_scaling": {
+    "nsteps": 100,
+    "dphi": 0.01,
+    "rule": "scaled_profit_gain = raw_profit_gain * nsteps",
+    "interpretation": "raw_profit_gain is the finite-cell unconditional full-horizon gain; scaled_profit_gain divides by dphi and is the primary grid-invariant one-shot metric"
+  },
+  "candidate_count": 2646000,
+  "positive_gain_count": 403869,
+  "max_profit_gain_raw": 9.926732563855838e-05,
+  "max_profit_gain_scaled": 0.009926732563855838,
+  "max_profit_gain_raw_relative_to_baseline": 1.799813428983845e-05,
+  "max_profit_gain_scaled_relative_to_baseline": 0.0017998134289838451,
+  "profit_gain_raw_weighted_by_reach_probability": {
+    "mean": 1.3153219931245742e-06,
+    "p50": 0.0,
+    "p90": 4.773951874074232e-08,
+    "p99": 3.437140043944018e-05,
+    "p999": 7.597245566449981e-05,
+    "max": 9.926732563855838e-05
+  },
+  "profit_gain_scaled_weighted_by_reach_probability": {
+    "mean": 0.00013153219931245737,
+    "p50": 0.0,
+    "p90": 4.7739518740742315e-06,
+    "p99": 0.0034371400439440177,
+    "p999": 0.0075972455664499805,
+    "max": 0.009926732563855838
+  },
+  "rank2": {
+    "max_profit_gain_raw": 6.067018234886888e-05,
+    "max_profit_gain_scaled": 0.006067018234886888,
+    "raw_weighted_by_reach_probability": {
+      "mean": 8.866864834574946e-07,
+      "p50": 0.0,
+      "p90": 0.0,
+      "p99": 2.26078386518272e-05,
+      "p999": 5.345277700697819e-05,
+      "max": 6.067018234886888e-05
+    },
+    "scaled_weighted_by_reach_probability": {
+      "mean": 8.866864834574944e-05,
+      "p50": 0.0,
+      "p90": 0.0,
+      "p99": 0.00226078386518272,
+      "p999": 0.005345277700697819,
+      "max": 0.006067018234886888
+    }
+  },
+  "rank1": {
+    "max_profit_gain_raw": 8.966726736268327e-05,
+    "max_profit_gain_scaled": 0.008966726736268327,
+    "raw_weighted_by_reach_probability": {
+      "mean": 1.4556183469300516e-06,
+      "p50": 0.0,
+      "p90": 0.0,
+      "p99": 3.495920411415268e-05,
+      "p999": 8.356419743831128e-05,
+      "max": 8.966726736268327e-05
+    },
+    "scaled_weighted_by_reach_probability": {
+      "mean": 0.00014556183469300506,
+      "p50": 0.0,
+      "p90": 0.0,
+      "p99": 0.0034959204114152678,
+      "p999": 0.008356419743831127,
+      "max": 0.008966726736268327
+    }
+  },
+  "rank0": {
+    "max_profit_gain_raw": 9.926732563855838e-05,
+    "max_profit_gain_scaled": 0.009926732563855838,
+    "raw_weighted_by_reach_probability": {
+      "mean": 1.4322069451193466e-06,
+      "p50": 0.0,
+      "p90": 1.3131202679566976e-07,
+      "p99": 3.938530926994676e-05,
+      "p999": 7.88641467558267e-05,
+      "max": 9.926732563855838e-05
+    },
+    "scaled_weighted_by_reach_probability": {
+      "mean": 0.00014322069451193473,
+      "p50": 0.0,
+      "p90": 1.3131202679566976e-05,
+      "p99": 0.003938530926994676,
+      "p999": 0.00788641467558267,
+      "max": 0.009926732563855838
+    }
+  },
+  "direct_forward_optimization_top": {
+    "candidate_count": 10000,
+    "price_min": 0.02,
+    "price_max": 6.0,
+    "coarse_points": 81,
+    "local_steps": 28,
+    "max_direct_profit_gain_raw": 0.00021658404745683046,
+    "max_direct_profit_gain_scaled": 0.021658404745683046,
+    "max_direct_gain_raw_relative_to_baseline": 3.926880014233644e-05,
+    "max_direct_gain_scaled_relative_to_baseline": 0.0039268800142336436,
+    "max_direct_gain_relative_to_baseline": 0.0039268800142336436,
+    "max_improvement_over_saved_br_raw": 0.00021568812961476045,
+    "max_improvement_over_saved_br_scaled": 0.021568812961476044,
+    "max_abs_price_vs_saved_br": 0.299526254721703
+  },
+  "brute_force_verification": [
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 39,
+      "n0": 5,
+      "n1": 12,
+      "n2": 0,
+      "fast_gain_raw": 9.926732563855838e-05,
+      "fast_gain_scaled": 0.009926732563855838,
+      "brute_force_gain_raw": 9.926732563680929e-05,
+      "brute_force_gain_scaled": 0.009926732563680929,
+      "abs_error_raw": 1.74908915476224e-15
+    },
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 33,
+      "n0": 6,
+      "n1": 14,
+      "n2": 0,
+      "fast_gain_raw": 9.806827552669721e-05,
+      "fast_gain_scaled": 0.009806827552669721,
+      "brute_force_gain_raw": 9.80682755313822e-05,
+      "brute_force_gain_scaled": 0.00980682755313822,
+      "abs_error_raw": 4.6849866651085814e-15
+    },
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 99,
+      "n0": 1,
+      "n1": 5,
+      "n2": 17,
+      "fast_gain_raw": 9.092727533689562e-05,
+      "fast_gain_scaled": 0.009092727533689563,
+      "brute_force_gain_raw": 9.092727533754896e-05,
+      "brute_force_gain_scaled": 0.009092727533754896,
+      "abs_error_raw": 6.53340229139765e-16
+    },
+    {
+      "life_phase": 1,
+      "focal_rank": 1,
+      "phi_index": 7,
+      "n0": 4,
+      "n1": 16,
+      "n2": 0,
+      "fast_gain_raw": 8.966726736268327e-05,
+      "fast_gain_scaled": 0.008966726736268327,
+      "brute_force_gain_raw": 8.96672673640353e-05,
+      "brute_force_gain_scaled": 0.00896672673640353,
+      "abs_error_raw": 1.3520272141437362e-15
+    },
+    {
+      "life_phase": 2,
+      "focal_rank": 0,
+      "phi_index": 27,
+      "n0": 7,
+      "n1": 14,
+      "n2": 0,
+      "fast_gain_raw": 8.747249177429877e-05,
+      "fast_gain_scaled": 0.008747249177429877,
+      "brute_force_gain_raw": 8.7472491775209e-05,
+      "brute_force_gain_scaled": 0.0087472491775209,
+      "abs_error_raw": 9.102283813830492e-16
+    }
+  ]
+}

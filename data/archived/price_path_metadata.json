@@ -1,0 +1,38 @@
+{
+  "status_quo": {
+    "params": {
+      "T": 3.0,
+      "d": 1.0,
+      "N": 20,
+      "a": 1.0,
+      "lambda_bar": 28.26596944380268,
+      "c": 0.09813169674655987,
+      "tau": 0.0,
+      "ticket_tax": 0.03189280144263196,
+      "kappa": 0.28
+    },
+    "policy_sha256": "8f79430687962ec7d9ae1d84bc3bd47d0e1f0f374e923b0b852c2588b769ab2d",
+    "policy_version": "certified status quo",
+    "usd_per_model_price_unit": 400.0,
+    "ymin_usd": 50,
+    "ymax_usd": 250
+  },
+  "passenger_neutral": {
+    "params": {
+      "T": 3.0,
+      "d": 1.2152153608103684,
+      "N": 20,
+      "a": 1.0,
+      "lambda_bar": 28.26596944380268,
+      "c": 0.09813169674655987,
+      "tau": 0.4,
+      "ticket_tax": 0.0,
+      "kappa": 0.28
+    },
+    "policy_sha256": "7cbd75e8949867b489c340767b41bf5f2e6c7727b29ad883aba916a51390aa23",
+    "policy_version": "pre-refinement",
+    "usd_per_model_price_unit": 400.0,
+    "ymin_usd": 50,
+    "ymax_usd": 250
+  }
+}
