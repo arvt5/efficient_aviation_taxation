@@ -90,7 +90,7 @@ def reproduce(output: Path) -> dict:
     audit = {'paper_commit': config['paper_commit'], 'checks': checks,
              'passed': all(check['passed'] for check in checks),
              'diagnostics_recomputed': False,
-             'policy_pairing_note': 'Free-entry accounting and diagnostic refer to different archived policy versions; see provenance/OPEN_ISSUES.md.'}
+             'policy_pairing_note': 'Free-entry accounting and diagnostic refer to different archived policy versions; see provenance/WORKFLOW.md.'}
     (output / 'audit.json').write_text(json.dumps(audit, indent=2) + '\n')
     print(json.dumps({'passed': audit['passed'], 'checks': len(checks), 'output': str(output)}))
     return audit

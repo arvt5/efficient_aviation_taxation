@@ -8,8 +8,8 @@ dynamic pricing and endogenous flight frequency. The reference paper revision is
 This is a working migration checkpoint, not yet a complete publication release.
 The reported endpoint accounting, archived diagnostics, interpolation roots, and
 three figure assets can be regenerated. The numerical solver has been extracted
-and smoke-tested. See [the remaining work](provenance/OPEN_ISSUES.md), including
-two policy-version discrepancies in the paper.
+and smoke-tested. See [the workflow](provenance/WORKFLOW.md) for the remaining
+reproduction work.
 
 ## Reproduce the archived results
 
@@ -84,7 +84,7 @@ Then run `aviation_taxation.diagnostics` on each retained checkpoint and select
 the policy with the smallest directly checked maximum gain using
 `aviation_taxation.checkpoint_selection`. The historical passenger run selected
 the first refined checkpoint rather than the last. The paper now uses the
-initial certified neural policy consistently for this endpoint; see the audit.
+initial certified neural policy consistently for this endpoint; see the workflow.
 Exact commands and complete
 archival inputs for the remaining calibration and sweep experiments are still
 being assembled; the above is a single-equilibrium recomputation path.
