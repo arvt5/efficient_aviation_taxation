@@ -65,9 +65,12 @@ def main():
     source.add_argument('--train', action='store_true', help='Explicitly launch the expensive endpoint training run')
     source.add_argument('--checkpoint', type=Path, help='Evaluate an existing neural checkpoint instead of training')
     parser.add_argument('--device', choices=('cpu', 'cuda'), default='cpu')
+    parser.add_argument('--seed', type=int, help='Training seed override; only valid with --train')
     parser.add_argument('--eu-revenue-beur', type=float, default=50)
     parser.add_argument('--output', type=Path, default=ROOT / 'outputs/passenger_endpoint')
     args = parser.parse_args()
+    if args.seed is not None and (not args.train or args.seed < 0):
+        parser.error('--seed requires --train and a nonnegative value')
     if not math.isfinite(args.eu_revenue_beur) or args.eu_revenue_beur <= 0:
         parser.error('EU revenue base must be finite and positive')
     settings = read_json(ROOT / 'config/passenger_training.json')
@@ -77,9 +80,12 @@ def main():
         checkpoint = args.output / 'network.pt'
         if checkpoint.exists():
             parser.error(f'Refusing to overwrite {checkpoint}; use --checkpoint or a new output directory')
-        subprocess.run([sys.executable, '-m', 'aviation_taxation.train',
-                        '--config', str(ROOT / 'config/passenger_training.json'),
-                        '--device', args.device, '--output', str(checkpoint)], check=True)
+        command = [sys.executable, '-m', 'aviation_taxation.train',
+                   '--config', str(ROOT / 'config/passenger_training.json'),
+                   '--device', args.device, '--output', str(checkpoint)]
+        if args.seed is not None:
+            command.extend(['--seed', str(args.seed)])
+        subprocess.run(command, check=True)
 
     from .tables import load_model
     from .forward import stationary_forward, welfare_moments

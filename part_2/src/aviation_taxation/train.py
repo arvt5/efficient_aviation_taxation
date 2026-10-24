@@ -18,8 +18,14 @@ def main():
     parser.add_argument('--config', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--device', choices=('cpu', 'cuda'), default='cpu')
+    parser.add_argument('--seed', type=int, help='Override the archived training seed for an independent replication')
     args = parser.parse_args()
     settings = json.loads(args.config.read_text())
+    if args.seed is not None:
+        if args.seed < 0:
+            parser.error('Seed must be nonnegative')
+        settings['seed'] = args.seed
+        settings['seed_note'] = 'Explicit independent-replication seed'
     params = FractionalParams(**settings['params'])
     torch.manual_seed(settings['seed'])
     net = FractionalDEQN(hidden=settings['hidden'], activation='relu').to(args.device)

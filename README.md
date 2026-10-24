@@ -106,6 +106,7 @@ of `--train`. Results go to `part_2/outputs/passenger_endpoint/results.json`.
 The archived baseline is held fixed; the report compares outcomes with the
 selected unrefined endpoint, without forcing them to match. This workflow does
 not perform tabular policy refinement or new one-shot certification.
+Use `--seed` with `--train` for independent replications at identical parameters.
 
 ## Accounting and Remaining Limits
 

@@ -319,13 +319,13 @@ def main():
     rs = summary['residual_stats']
     fc = summary['foc_consistency']['overall']
     print('\n=== FULL-RATIONALITY CERTIFICATION SUMMARY ===')
-    print(f'mass conservation: [{summary['mass_conservation']['min']:.8f}, {summary['mass_conservation']['max']:.8f}]')
-    print(f'forward moments:   vacancy={m['vacancy_departing']:.4f} relcost={m['relcost']:.4f} E[p]={m['probability_weighted_price']:.4f}')
-    print(f'residuals (mean):  foc={rs['foc']['mean']:.3e} eta_violation={rs['eta_violation']['mean']:.3e} hjb={rs['hjb']['mean']:.3e}')
-    print(f'policy eval:       outer={summary['policy_eval']['outer_iters']} final_gap={summary['policy_eval']['final_gap']:.2e}')
-    print(f'one-shot gain:     mean={g['mean']:.3e} p99={g['p99']:.3e} max={g['max']:.3e}')
-    print(f'weighted gain:     mean={gw['mean']:.3e} p99={gw['p99']:.3e}')
-    print(f'FOC residual:      at V_net(occ)={fc['foc_at_Vnet_occ']:.3e}  at V_eval(occ)={fc['foc_at_Veval_occ']:.3e}')
+    print(f"mass conservation: [{summary['mass_conservation']['min']:.8f}, {summary['mass_conservation']['max']:.8f}]")
+    print(f"forward moments:   vacancy={m['vacancy_departing']:.4f} relcost={m['relcost']:.4f} E[p]={m['probability_weighted_price']:.4f}")
+    print(f"residuals (mean):  foc={rs['foc']['mean']:.3e} eta_violation={rs['eta_violation']['mean']:.3e} hjb={rs['hjb']['mean']:.3e}")
+    print(f"policy eval:       outer={summary['policy_eval']['outer_iters']} final_gap={summary['policy_eval']['final_gap']:.2e}")
+    print(f"one-shot gain:     mean={g['mean']:.3e} p99={g['p99']:.3e} max={g['max']:.3e}")
+    print(f"weighted gain:     mean={gw['mean']:.3e} p99={gw['p99']:.3e}")
+    print(f"FOC residual:      at V_net(occ)={fc['foc_at_Vnet_occ']:.3e}  at V_eval(occ)={fc['foc_at_Veval_occ']:.3e}")
     print(f'wrote {out}')
     print(f'wrote {top_csv}')
 if __name__ == '__main__':
