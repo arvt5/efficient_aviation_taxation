@@ -96,6 +96,17 @@ modules provide `--help`. The supplied training configuration is
 one GPU, 32 CPU cores, 192 GB RAM and 24 hours. Full retraining has not been
 performed during migration and is not part of `make reproduce`.
 
+To reproduce the passenger endpoint from its given parameters (not recalibrate
+to its outcomes), run `python -m aviation_taxation.passenger_endpoint --train
+--device cuda`. This explicitly launches the expensive training run, evaluates
+the resulting policy, derives the carbon charge from zero profit, and reports
+passenger deviations, welfare, net fiscal dividend and the EU revenue rebasing.
+For an existing neural policy, use `--checkpoint /path/to/network.pt` instead
+of `--train`. Results go to `part_2/outputs/passenger_endpoint/results.json`.
+The archived baseline is held fixed; the report compares outcomes with the
+selected unrefined endpoint, without forcing them to match. This workflow does
+not perform tabular policy refinement or new one-shot certification.
+
 ## Accounting and Remaining Limits
 
 - The stationary CES calibration behind approximately 3% vacancy and 3.2%
@@ -119,7 +130,7 @@ performed during migration and is not part of `make reproduce`.
 
 ## Verification and Origins
 
-The Python suite has 13 tests; two network-specific tests are skipped without
+The Python suite has 15 tests; two network-specific tests are skipped without
 optional PyTorch. MATLAB verification is separate. Full recalibration and tax
 sweeps have not all been re-run. Tested versions: NumPy 2.4.6, SciPy 1.17.1,
 Matplotlib 3.10.9 and optional PyTorch 2.12.0. Historical cluster guidance lists
