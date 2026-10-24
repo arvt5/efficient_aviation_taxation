@@ -70,6 +70,11 @@
     "sha256": "6a10ee4f3961332c1ebcb6723711e93f798a06a69dcb416af05f962ab4db730a"
   },
   {
+    "path": "data/archived/passenger_neutral_refined.json",
+    "bytes": 1673,
+    "sha256": "b021feba303152ace0c0db5e55120712f6272550c1baf2b257dadd73e1a2eed1"
+  },
+  {
     "path": "data/archived/passenger_selection.json",
     "bytes": 364,
     "sha256": "dcdd020e647207bd58435fc1422644a01433a668936303e2dc0cd7c10af24113"

@@ -46,6 +46,22 @@ Part I exports the four figure assets, their underlying series and result
 tables. Part II exports endpoint and diagnostic tables, interpolation fits,
 price-path and welfare figures, and `audit.json` with 42 published-value checks.
 
+## Intra-EU Policy Brief
+
+`python -m aviation_taxation.eu_policy_brief` reproduces the monetary comparison
+between refined and unrefined passenger-endpoint policies. It writes CSV and
+JSON under `part_2/outputs/eu_policy_brief/`, including assumptions and passenger
+deviations. It is also included in `make reproduce`.
+
+The default rebases global status quo aviation revenue of USD 1,000bn to an
+intra-EU revenue base of EUR 50bn: numerically a factor of 0.05, not GDP weighting
+or currency conversion. The EUR 50bn base is inferred from the brief; it is not
+independently estimated here and is distinct from its EUR 45bn VAT base.
+Override it with `--eu-revenue-beur`. The script reports fiscal dividend,
+welfare, fixed-cost savings, the 0.28 wedge correction and cross-sector fiscal
+spillovers. It does not derive the brief's 3.7% VAT, oil or climate benefits,
+or establish equivalence between VAT and the model's carbon instrument.
+
 ## Solve the Models
 
 Part I requires MATLAB R2025a with Optimization Toolbox. From the repo root:
@@ -103,7 +119,7 @@ performed during migration and is not part of `make reproduce`.
 
 ## Verification and Origins
 
-The Python suite has 11 tests; two network-specific tests are skipped without
+The Python suite has 13 tests; two network-specific tests are skipped without
 optional PyTorch. MATLAB verification is separate. Full recalibration and tax
 sweeps have not all been re-run. Tested versions: NumPy 2.4.6, SciPy 1.17.1,
 Matplotlib 3.10.9 and optional PyTorch 2.12.0. Historical cluster guidance lists

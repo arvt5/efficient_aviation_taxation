@@ -9,6 +9,7 @@ reproduce: verify
 	MPLBACKEND=Agg $(PYTHON) -m part_1.time_varying_demand.reproduce
 	MPLBACKEND=Agg $(PYTHON) -m part_1.duopoly.reproduce
 	$(PYTHON) -m aviation_taxation.reproduce
+	$(PYTHON) -m aviation_taxation.eu_policy_brief
 	MPLBACKEND=Agg $(PYTHON) -m aviation_taxation.welfare_plot
 	$(PYTHON) -m aviation_taxation.price_figures
 

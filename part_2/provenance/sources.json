@@ -381,5 +381,11 @@
     "output": "data/archived/passenger_neutral.json",
     "source": "data/archived/passenger_neutral_raw.json and status_quo.json",
     "extraction": "Restore calibrated fixed cost in accounting; derive implementing carbon charge. Allocation and frequency unchanged."
+  },
+  {
+    "output": "data/archived/passenger_neutral_refined.json",
+    "source": "artifacts/stage6/runs/kappa028_tickettax_pipeline_1917935/12_passenger_endpoint_full_refine_1960106/06_final_accounting/accounting.json",
+    "source_sha256": "b021feba303152ace0c0db5e55120712f6272550c1baf2b257dadd73e1a2eed1",
+    "extraction": "Byte-identical refined-policy accounting retained only for the EU policy-brief comparison; does not replace the selected unrefined paper endpoint."
   }
 ]
